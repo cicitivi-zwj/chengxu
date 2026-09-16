@@ -31,6 +31,8 @@ temp/
 node_modules/
 dist/
 build/
+# 打包出来的可执行文件不入库：十几 MB 的二进制，随时可由源码重新打包
+*.exe
 out/
 target/
 bin/
