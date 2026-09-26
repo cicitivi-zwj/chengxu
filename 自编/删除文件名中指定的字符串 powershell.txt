@@ -1,0 +1,13 @@
+# 递归批量删除文件名中的「我ABC123」字符串
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace '我ABC123', ''} -ErrorAction SilentlyContinue
+
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace '我ABC123', ''} -ErrorAction SilentlyContinue
+
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace '我ABC123', ''} -ErrorAction SilentlyContinue
+
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace '我ABC123', ''} -ErrorAction SilentlyContinue
+
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace 'coc3678', ''} -ErrorAction SilentlyContinue
+
+
+Get-ChildItem -Recurse | Rename-Item -NewName {$_.Name -replace '学更多课程请加微信：adcadc2023', ''} -ErrorAction SilentlyContinue

@@ -1,0 +1,9 @@
+1、只读USB设备：HKEY_LOCAL_MACHINE\SYSTEM \CurrentControlSet\Control，在其下新建一个名为“StorageDevicePolicies”的项，在右边的窗格中新建一个名为“WriteProtect”的DWORD值，并将其数值数据设置为1【0】
+2、禁用盘符自动分配：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\UsbStor\Star的值改成4 【3】
+3、运行USB西西软件：1禁用指定部分盘符，2、禁用注册表，3、禁用盘符和删除驱动【修复】
+4、运行批处理“关闭USB”【开启USB】
+5、组策略gpedit.msc。用户配置-管理模板-系统-阻止访问注册表工具-已启用【已禁用】
+6、组策略gpedit.msc。用户配置-管理模板-windows组件-系统-可移动存储访问-可移动磁盘和WPD等多项拒绝读写【已禁用】
+
+以上每条【】里面的内容为逆操作
+

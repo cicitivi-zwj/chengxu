@@ -1,0 +1,1 @@
+for /f "delims=" %%a in ('dir /a-d /s /b^|findstr "(1)"') do (del /f /q /a "%%a")
